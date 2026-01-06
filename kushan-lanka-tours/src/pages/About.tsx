@@ -4,7 +4,7 @@ export default function About() {
 
       {/* Header */}
       <div className="text-center mb-5">
-        <h1 className="display-5 fw-bold">About Kushan Lanka Tours</h1>
+        <h1 className="display-5 fw-bold">About Ceylon Escape Travels</h1>
         <p className="text-secondary mt-3">
           Discover Sri Lanka through authentic journeys and unforgettable experiences.
         </p>

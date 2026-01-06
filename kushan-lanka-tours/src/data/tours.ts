@@ -5,8 +5,28 @@ import ella4 from "../assets/ell4.jpg";
 import ella5 from "../assets/ell5.jpg";
 import ella6 from "../assets/ell6.jpg";
 
-import galleImg from "../assets/Galle1.jpg";
+import galleImg from "../assets/hikka.jpg";
 import sigiriyaImg from "../assets/Seegiriya1.jpg";
+
+import sa1 from "../assets/sa1.jpeg";
+import sa2 from "../assets/sa2.jpeg";
+import sa3 from "../assets/sa3.jpeg";
+import sa4 from "../assets/sa4.jpeg";
+import sa5 from "../assets/sa5.jpeg";
+import sa6 from "../assets/sa6.jpeg";    
+import sa7 from "../assets/sa7.jpeg";
+import sa8 from "../assets/sa8.jpeg";    
+import sa9 from "../assets/sa9.jpeg";
+import sa10 from "../assets/sa10.jpeg";
+import sa11 from "../assets/sa11.jpeg";
+import sa12 from "../assets/sa12.jpeg";  
+
+import ds1 from "../assets/ds1.jpeg";
+import ds2 from "../assets/ds2.jpeg";
+import ds3 from "../assets/ds3.jpeg";
+import ds4 from "../assets/ds4.jpeg";
+import ds5 from "../assets/ds5.jpeg";
+import ds6 from "../assets/ds6.jpeg";
 
 export type Tour = {
   id: string;
@@ -40,9 +60,10 @@ export const tours: Tour[] = [
   },
   {
     id: "galle",
-    title: "Galle Heritage Tour",
-    location: "Galle",
+    title: "Down South",
+    location: "Mirissa & Galle",
     image: galleImg,
+    gallery: [ds1, ds2, ds3, ds4, ds5, ds6],
     price: 120,
     duration: "2 Days",
     description: "Discover colonial history and coastal beauty.",
@@ -51,9 +72,10 @@ export const tours: Tour[] = [
   },
   {
     id: "sigiriya",
-    title: "Sigiriya Rock Fortress",
+    title: "Sri Lanka Safari & Sigiriya",
     location: "Sigiriya",
     image: sigiriyaImg,
+    gallery: [sa1, sa2, sa3, sa4, sa5, sa6, sa7, sa8, sa9, sa10, sa11, sa12],
     price: 120,
     duration: "2 Days",
     description: "Climb the ancient rock fortress and explore heritage sites.",

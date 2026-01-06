@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand / About */}
           <div className="col-md-4">
             <h5 className="fw-bold text-white mb-3">
-              🌴 Kushan Lanka Tours
+              🌴 Ceylon Escape Travels
             </h5>
             <p className="small text-light opacity-75">
               Explore Sri Lanka with trusted local guides, curated tour packages,
@@ -39,8 +39,8 @@ export default function Footer() {
           <div className="col-md-4">
             <h6 className="fw-semibold text-white mb-3">Contact</h6>
             <p className="small mb-2">📍 Sri Lanka</p>
-            <p className="small mb-2">📞 +94 7X XXX XXXX</p>
-            <p className="small mb-0">✉️ info@kushanlankatours.com</p>
+            <p className="small mb-2">📞 +94 76 575 342</p>
+            <p className="small mb-0">✉️ kushanc403@gmail.com</p>
           </div>
         </div>
       </div>

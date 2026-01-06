@@ -6,7 +6,7 @@ export default function AppNavbar() {
       <div className="container">
         {/* Brand */}
         <Link to="/" className="navbar-brand fw-bold text-success d-flex align-items-center gap-2">
-          🌴 <span>Kushan Lanka Tours</span>
+          🌴 <span>Ceylon Escape Travels</span>
         </Link>
 
         {/* Mobile Toggle */}

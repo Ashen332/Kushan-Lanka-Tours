@@ -2,28 +2,29 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
   color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-/* Overlay (adjust opacity if needed) */
 .hero-overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* reduce if image looks dark */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
   z-index: 0;
 }
 
-/* Hero content */
+/* Hero text and buttons */
 .hero-section h1,
 .hero-section p,
 .hero-section .hero-btn {
@@ -31,67 +32,98 @@
   z-index: 1;
 }
 
-/* Button hover */
-.hero-btn,
+/* Hero button hover */
+.hero-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* CTA button hover */
 .cta-btn {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.hero-btn:hover,
 .cta-btn:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* Tour cards */
+/* TourCard hover */
 .tour-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .tour-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
 }
 
 .card img {
   transition: transform 0.4s ease;
 }
-
 .card:hover img {
   transform: scale(1.05);
 }
-.photo-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+
+/* Customer Reviews */
+.review-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.review-card .stars {
+  color: #FFC107; /* gold stars */
+}
+.review-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.photo-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-.photo-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0)
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease;
+.avatar {
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+/* Footer main */
+.footer-custom {
+  background: linear-gradient(180deg, #0f172a, #020617);
 }
 
-.photo-card:hover img {
-  transform: scale(1.12);
+/* Footer links */
+.footer-links li {
+  margin-bottom: 0.5rem;
 }
 
-.photo-card:hover::after {
-  opacity: 1;
+.footer-links a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #22c55e;
+  padding-left: 4px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.6);
 }

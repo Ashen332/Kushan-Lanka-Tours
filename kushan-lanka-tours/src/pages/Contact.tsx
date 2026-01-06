@@ -65,12 +65,12 @@ export default function Contact() {
 
             <div className="mb-3">
               <p className="mb-1 fw-semibold">📞 Phone</p>
-              <p className="text-secondary">+94 7X XXX XXXX</p>
+              <p className="text-secondary">+94 76 575 342</p>
             </div>
 
             <div className="mb-4">
               <p className="mb-1 fw-semibold">✉️ Email</p>
-              <p className="text-secondary">info@kushanlankatours.com</p>
+              <p className="text-secondary">Kushanc403@gmail.com</p>
             </div>
 
             <div className="border-top pt-3">
