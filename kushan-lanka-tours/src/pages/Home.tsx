@@ -12,7 +12,7 @@ import { reviews } from "../data/reviews";
 import ReviewCard from "../components/ReviewCard";
 
 // Wallpaper
-import wallpaper from "../assets/wallpaper1.jpg";
+import wallpaper from "../assets/wallpaper1.webp";
 
 export default function Home() {
     const [locationFilter, setLocationFilter] = useState("");
@@ -26,8 +26,14 @@ export default function Home() {
         .slice(0, 3);
 
     useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({
+            duration: 900,
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 80,
+        });
     }, []);
+
 
     return (
         <div className="min-vh-100">
@@ -39,26 +45,35 @@ export default function Home() {
             >
                 <div className="hero-overlay"></div>
 
-                <h1 className="display-4 fw-bold mb-3" data-aos="fade-down">
+                <h1
+                    className="display-4 fw-bold mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
                     Explore Sri Lanka with Ceylon Escape Travels
                 </h1>
+
 
                 <p
                     className="lead mb-4 mx-auto"
                     style={{ maxWidth: "600px" }}
                     data-aos="fade-up"
+                    data-aos-delay="200"
                 >
                     Authentic experiences. Local guides. Unforgettable journeys. Discover the beauty,
                     culture, and adventure Sri Lanka has to offer.
                 </p>
 
+
                 <Link
                     to="/tours"
                     className="btn btn-light text-success fw-semibold px-4 py-2 hero-btn"
                     data-aos="zoom-in"
+                    data-aos-delay="300"
                 >
                     Explore Tours
                 </Link>
+
             </section>
 
             {/* Featured Tours */}
@@ -109,7 +124,7 @@ export default function Home() {
                 </div>
             </section>
 
-            
+
 
             <section className="bg-light py-5">
                 <div className="container">
@@ -150,7 +165,7 @@ export default function Home() {
 
 
                 <div className="row g-4">
-                    {reviews.slice(0, 6).map((review, index) => (
+                    {reviews.slice(0, 3).map((review, index) => (
                         <div
                             key={review.id}
                             className="col-md-4"

@@ -1,6 +1,7 @@
 export type Review = {
   id: string;
   name: string;
+  country?: string;
   avatar?: string; // optional profile image
   rating: number; // 1-5
   comment: string;

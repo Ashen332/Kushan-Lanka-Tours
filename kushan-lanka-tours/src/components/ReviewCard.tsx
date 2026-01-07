@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { Review } from "../data/reviews"; // 👈 use 'import type'
 
 type Props = {

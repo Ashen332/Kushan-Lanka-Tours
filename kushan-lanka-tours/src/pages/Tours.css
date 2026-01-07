@@ -1,0 +1,35 @@
+/* Hero */
+.tours-hero {
+  padding: 4rem 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #198754, #20c997);
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Filters */
+.filters-card {
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Tour card animation */
+.tour-card-wrapper {
+  height: 100%;
+  border-radius: 1rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.tour-card-wrapper:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* Input focus */
+.filters-card input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(25,135,84,0.25);
+  border-color: #198754;
+}

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { tours } from "../data/tours";
 import BookingModal from "../components/BookingModel";
-import PhotoGallery from "../components/PhotoGallery";
 import InstagramCarousel from "../components/InstagramCarousel";
 
 export default function TourDetails() {

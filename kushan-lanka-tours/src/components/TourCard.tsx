@@ -10,6 +10,8 @@ export default function TourCard({ tour }: { tour: Tour }) {
         <img
           src={tour.image}
           alt={tour.title}
+          loading="lazy"
+          decoding="async"
           className="card-img-top"
           style={{ height: "15rem", objectFit: "cover" }}
         />
